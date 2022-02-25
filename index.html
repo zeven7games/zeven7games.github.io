@@ -182,9 +182,20 @@
 							<input type="hidden" name="_captcha" value="false">
 							<input type="hidden" name="_next" value="https://zeven7games.github.io/thanks.html">
 							<input type="hidden" name="_subject" value="Nuevo Mensaje - Portfolio!">
-							<input type="text" name="name" required>
-     <input type="email" name="email" required>
-     <button type="submit">Send</button>
+							<div class="fields">
+								<div class="field half">
+									<label for="name">Nombre</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field half">
+									<label for="email">Email</label>
+									<input type="text" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Mensaje</label>
+									<textarea name="message" id="message" rows="5"></textarea>
+								</div>
+							</div>
 							<ul class="actions">
 								<li><a href="" class="button submit">Enviar</a></li>
 							</ul>
