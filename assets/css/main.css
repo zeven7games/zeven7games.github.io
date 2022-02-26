@@ -2230,11 +2230,24 @@ hr{
 				padding: 2em 1.5em 0.1em 1.5em ;
 			}
 
-				.features section .icon {
-					left: 0;
-					position: relative;
-					top: 0;
-				}
+			.features section .icon {
+				left: 20px;
+				position:absolute;
+				top: 20px;
+				display: block;
+			}
+
+			.features section h3 {
+				left: 10px;
+				position: relative;
+				bottom: 3px;
+				display: block;
+				margin-left: 15%;
+			}
+
+			.features section p {
+				margin-top: 20px;
+			}
 
 		}
 
