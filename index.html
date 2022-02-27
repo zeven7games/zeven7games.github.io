@@ -19,11 +19,10 @@
 </head>
 
 <body class="is-preload">
-
 	<!-- Sidebar -->
 	<section id="sidebar">
 		<div class="inner">
-			<nav>
+			<nav>				
 				<div class="logo">
 					<img src="images/Z7 icon.png" alt="" width="80%" height="80%" data-position="center center" />
 				</div>
@@ -39,9 +38,9 @@
 
 	<!-- Wrapper -->
 	<div id="wrapper">
-
+		<div id="google_translate_element"></div>
 		<!-- Intro -->
-
+		
 		<section id="intro" class="wrapper style1 fullscreen fade-up">
 			<div class="inner">
 				<h1>Bienvenido, al Portfolio de</h1>
@@ -178,7 +177,7 @@
 				<h2>Contacto</h2>
 				<p>Si deseas puedes comunicarte conmigo.</p>
 				<div class="split style1">
-					<section>						
+					<section>
 						<form action="https://formsubmit.co/aln71198@gmail.com" method="POST">
 							<input type="hidden" name="_captcha" value="false">
 							<input type="hidden" name="_next" value="https://zeven7games.github.io/thanks.html">
@@ -196,11 +195,11 @@
 									<label for="message">Mensaje</label>
 									<textarea name="message" id="message" rows="5" required></textarea>
 								</div>
-							</div>						
+							</div>
 							<ul class="actions">
-								<button class="submit-btn" type="submit">Enviar</button>								
-							</ul>		
-					   </form>
+								<button class="submit-btn" type="submit">Enviar</button>
+							</ul>
+						</form>
 					</section>
 					<section>
 						<ul class="contact">
@@ -251,6 +250,13 @@
 	</footer>
 
 	<!-- Scripts -->
+	<script type="text/javascript">
+		function googleTranslateElementInit() {
+		  new google.translate.TranslateElement({pageLanguage: 'sp', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+		}
+		</script>
+		
+		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
