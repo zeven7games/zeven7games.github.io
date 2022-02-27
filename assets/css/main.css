@@ -75,6 +75,14 @@ input, select, textarea {
 	appearance: none;
 }
 
+#google_translate_element{
+	position: absolute;
+    top: 0;
+    left: 20%;
+	/* margin-left: 85%; */
+	background-image: #181718;
+}
+
 /* Basic */
 
 	@-ms-viewport {
@@ -3948,3 +3956,16 @@ hr{
 			}
 
 		}
+
+		@media screen and (max-width: 736px) {
+
+			#google_translate_element{
+				/* position: absolute;
+				top: 0;
+				right: 0; */
+				margin-left: 51.5%;
+				background-image: #181718;
+			}
+
+		}
+		
