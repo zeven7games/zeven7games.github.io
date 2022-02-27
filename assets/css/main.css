@@ -2395,7 +2395,7 @@ hr{
 
 		select option {
 			color: #ffffff;
-			background: #312450;
+			background: #222;
 		}
 
 		select:focus::-ms-value {
