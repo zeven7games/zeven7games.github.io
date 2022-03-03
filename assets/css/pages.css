@@ -536,6 +536,40 @@ input[type="radio"]:focus+label:before {
 
 @media screen and (max-width: 900px) {
 
+  .fa-arrow-alt-circle-left {
+    padding: 30px;
+    display: block;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 70px;
+    left: 10px;
+  }
+
+  .title {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  #game-info {
+    margin: 5% 15% 0% 15%;
+  }
+
+  .caption-container3 {
+    margin: 0% 15% 0% 15%;
+  }
+
+  .caption-container4 {
+    font-size: 0.9em;
+  }
+
+  .container {
+    margin: 0% 15% 5% 15%;
+  }
+
   .modal-content {
     width: 65%;
   }
