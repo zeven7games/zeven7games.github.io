@@ -261,7 +261,7 @@ hr{
 		}
 
 		h2 {
-			font-size: 1.25em;
+			font-size: 1.55em;
 		}
 
 		h3 {
@@ -2249,7 +2249,7 @@ hr{
 				position: relative;
 				bottom: 3px;
 				display: block;
-				margin-left: 15%;
+				margin-left: 18%;
 			}
 
 			.features section p {
@@ -3167,6 +3167,10 @@ hr{
 
 		@media screen and (max-width: 736px) {
 
+			.spotlights > section {
+				display: block;
+			}
+
 			.spotlights > section > .image {
 				height: 50vh;
 				min-height: 15em;
@@ -3507,6 +3511,9 @@ hr{
 							line-height: 6em;
 						}
 
+						#intro .button{
+							margin-top: 10px;
+						}
 		}
 
 /* Wrapper (main) */
