@@ -2261,6 +2261,20 @@ hr{
 
 		}
 
+/* Skills */	
+@media screen and (max-width: 736px) {
+	
+	#two .inner{
+		padding-right: 30px;
+		padding-left: 30px;
+		border-bottom: solid 1px rgba(255, 255, 255, 0.15);
+	}
+
+	/* .features {
+		text-align: justify;
+	} */
+}
+
 /* Form */
 
 	form {
@@ -2847,6 +2861,15 @@ hr{
 			ul.contact > li:first-child {
 				margin-top: 0;
 			}
+
+		@media screen and (max-width: 736px) {
+
+			.submit-btn{
+				margin-left: 0;
+			}
+
+		}
+			
 
 /* Icons */
 
@@ -3997,8 +4020,8 @@ hr{
 				.wrapper > .inner {
 					/* padding: 4em 3.5em 2em 3.5em; */
 					padding-top: 1.5em;
-					padding-left: 3.5em;
-					padding-right: 3.5em;
+					padding-left: 30px; /*3.5em */
+					padding-right: 30px;
 					padding-bottom: 2em;
 				}
 
