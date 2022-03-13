@@ -285,6 +285,101 @@ hr{
 
 	}
 
+	.hamburger{
+		position: absolute;
+		right: 3%;
+		top:2%;
+		display: block;
+		width: 35px;
+		cursor: pointer;
+		appearance: none;
+		background: none;
+		outline: none;
+		border: none;
+	}
+
+	.hamburger.is-active .bar{
+		opacity: 0;
+	}
+
+	.mobile-nav {
+		position: fixed;
+		top: 0;
+		left: 100%;
+		display: block;
+		width: 100%;
+		min-height: 100vh;
+		z-index: 98;
+		background-color: #222; 
+		padding-top: 120px;
+		transition: 1s;
+	}
+
+	.mobile-nav.is-active{
+		left: 0;
+	}
+
+	.mobile-nav.hamburger.is-active{
+		display: none;
+	}
+
+	.mobile-nav #first{
+		margin-top: 50px;
+	}
+
+	.mobile-nav a{
+		width: 100%;
+		max-width: 200px;
+		margin: 0 auto 16px;
+		text-align: center;
+		/* -moz-transition: color 0.2s ease;
+		-webkit-transition: color 0.2s ease;
+		-ms-transition: color 0.2s ease;
+		transition: color 0.2s ease; */
+		border: 0;
+		color: rgba(255, 255, 255, 0.35);
+		display: block;
+		font-size: 0.7em;
+		font-weight: bold;
+		letter-spacing: 0.25em;
+		line-height: 1.75;
+		outline: 0;
+		padding: 1.35em 0;
+		position: relative;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+	.mobile-nav a:before, .mobile-nav a:after {
+		border-radius: 0.2em;
+		bottom: 0;
+		content: '';
+		height: 0.2em;
+		position: absolute;
+		right: 0;
+		width: 100%;
+	}
+
+	.mobile-nav a:before {
+		background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
+		background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
+		background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
+		background-image: linear-gradient(to right, #5e42a6, #b74e91);
+	}
+
+	.mobile-nav a:active {
+		color: #fff;
+	}
+
+	.mobile-nav img{
+		display: block;
+		width: 100%;
+		max-width: 200px;
+		margin: 0 auto 16px;
+		text-align: center;
+		padding: 12px 16px;
+	}
+
 	.logo{
 		margin-bottom: 50%;
 		padding-right: 15%;

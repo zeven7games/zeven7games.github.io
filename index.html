@@ -22,7 +22,7 @@
 	<!-- Sidebar -->
 	<section id="sidebar">
 		<div class="inner">
-			<nav>				
+			<nav>
 				<div class="logo">
 					<img src="images/Z7 icon.png" alt="" width="80%" height="80%" data-position="center center" />
 				</div>
@@ -36,14 +36,45 @@
 		</div>
 	</section>
 
+
+
 	<!-- Wrapper -->
 	<div id="wrapper">
-		
-		<!-- Intro -->
+
 		<div id="google_translate_element"></div>
-		
+
+		<!-- Mobile Nav -->
+		<nav id="nav-panel" class="mobile-nav">
+			<button onclick="hide()">
+				<div><i class="fas fa-bars fa-2x"></i></div>
+			</button>
+			<img class="logo2" src="images/Z7 icon.png" alt="" width="45%" height="45%" />
+			<a id="first" href="#intro">Sobre Mi</a></li>
+			<a href="#one">Mis Proyectos</a></li>
+			<a href="#two">Skills</a></li>
+			<a href="#three">Contacto</a></li>
+		</nav>
+		<!-- <nav  id="nav" class="mobile-nav">
+			<button onclick="hide()">
+				<div><i class="fas fa-bars fa-2x"></i></div>
+			</button>
+			<img class="logo2" src="images/Z7 icon.png" alt="" width="45%" height="45%" />
+			<a id="first" href="#intro">Sobre Mi</a></li>
+			<a href="#one">Mis Proyectos</a></li>
+			<a href="#two">Skills</a></li>
+			<a href="#three">Contacto</a></li>
+		</nav> -->
+
+		<!-- Intro -->
+
+
 		<section id="intro" class="wrapper style1 fullscreen fade-up">
-			<div class="banner"><img class="logo2" src="images/Z7 icon.png" alt="" width="45%" height="45%"/></div>
+			<div class="banner">
+				<img class="logo2" src="images/Z7 icon.png" alt="" width="45%" height="45%" />
+				<button onclick="show()" class="hamburger">
+					<div class="bar"><i class="fas fa-bars fa-4x"></i></div>
+				</button>
+			</div>
 			<div class="inner">
 				<h1>Bienvenido, al Portfolio de</h1>
 				<h1>Agustin Lopez Nogueiras</h1>
@@ -255,11 +286,21 @@
 
 	<script type="text/javascript">
 		function googleTranslateElementInit() {
-			new google.translate.TranslateElement({ pageLanguage: 'sp', includedLanguages : 'es,en,pt,fr,zh-TW,ja,ko,hi', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL }, 'google_translate_element');
+			new google.translate.TranslateElement({ pageLanguage: 'sp', includedLanguages: 'es,en,pt,fr,zh-TW,ja,ko,hi', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL }, 'google_translate_element');
 		}
 	</script>
-	<script type="text/javascript"
-		src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+	</script>
+	<script>
+		function hide() {
+			// document.getElementById("nav").style.display = 'none';
+			document.getElementById("nav-panel").style.zIndex = '0';
+		}
+		function show() {
+			// document.getElementById("nav").style.display = 'none';
+			document.getElementById("nav-panel").style.zIndex = '98';
+		}
+	</script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
 	<script src="assets/js/jquery.scrolly.min.js"></script>
