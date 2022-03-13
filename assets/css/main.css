@@ -75,13 +75,6 @@ input, select, textarea {
 	appearance: none;
 }
 
-#google_translate_element{
-	/* position: absolute;
-    top: 0;
-    left: 20%; */
-	/* margin-left: 85%; */
-}
-
 /* Basic */
 
 	@-ms-viewport {
@@ -161,13 +154,6 @@ hr{
 			}
 
 		}
-
-	.banner{
-		background-color: #181718;
-		padding-top: 15px;
-		text-align: center;
-		display: none;
-	}
 
 	a {
 		-moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
@@ -285,21 +271,37 @@ hr{
 
 	}
 
+	/********** Mobile Navbar **********/
+
+	.banner{
+		background-color: #181718;
+		padding-top: 20px;
+		padding-bottom: 10px;
+		text-align: center;
+		display: none;
+	}
+
+	.banner .logo2{
+		animation: fadeIn 2s;
+		-webkit-animation: fadeIn 2s;
+		-moz-animation: fadeIn 2s;
+		-o-animation: fadeIn 2s;
+		-ms-animation: fadeIn 2s;
+	}
+
 	.hamburger, .navigation{
 		display: none;
 	}
 
-	/***** Mobile Navbar *****/
-
 	@media screen and (max-width: 736px) {
 
-		a,button{
+		a, button{
 			cursor: pointer;
 		}
 		
 		nav{
 			position: absolute;
-			top: 180px;
+			top: 80px;
 			right: 65px;
 			width: 250px;
 		}
@@ -311,12 +313,7 @@ hr{
 			width: 350px;
 			height: 100%;
 			background-color: #181718;
-			transition: .5s;
-		}
-	
-		.navigation button{
-			border: none;
-			background-color: transparent !important;
+			transition: 0.5s;
 		}
 	
 		.navigation ul li{
@@ -334,8 +331,8 @@ hr{
 		
 		.hamburger{
 			display: block;
-			top: 5%;
-			left: 75%;
+			top: 11%;
+			left: 73%;
 			width: 30px;
 			height: 30px;
 			transform: translate(10%);
@@ -383,9 +380,9 @@ hr{
 			transform: rotate(-45deg) translate(6px, -5px);
 		}
 	
-		.navigation #first{
+		/* .navigation #first{
 			margin-top: 50px;
-		}
+		} */
 	
 		.navigation a{
 			width: 100%;
@@ -438,7 +435,7 @@ hr{
 
 	}
 
-	/*************************/
+	/***********************************/
 
 	.logo{
 		margin-bottom: 50%;
@@ -2550,8 +2547,8 @@ hr{
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #ffffff;
-			box-shadow: 0 0 0 1px #ffffff;
+			/* border-color: #ffffff; */
+			box-shadow: 0 0 0 0.5px #ffffff;
 		}
 
 	select {
@@ -4156,7 +4153,7 @@ hr{
 					margin-bottom: 10px;
 				}
 
-				#intro .banner{
+				.banner{
 					display: none;
 				}
 
@@ -4168,7 +4165,7 @@ hr{
 					font-size: 1em;
 				}
 
-				#intro .banner{
+				.banner{
 					display: block;
 				}
 
@@ -4188,3 +4185,56 @@ hr{
 				background-attachment: scroll;
 			}
 		}	
+
+
+	/***** Fade in Animation *****/
+
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+	
+		100% {
+			opacity: 1;
+		}
+	}
+	
+	@-moz-keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+	
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@-webkit-keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+	
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@-o-keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+	
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@-ms-keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+	
+		100% {
+			opacity: 1;
+		}
+	}

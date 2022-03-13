@@ -19,7 +19,11 @@
 </head>
 
 <body class="is-preload">
+
+	<!------------->
 	<!-- Sidebar -->
+	<!------------->
+
 	<section id="sidebar">
 		<div class="inner">
 			<nav>
@@ -36,41 +40,50 @@
 		</div>
 	</section>
 
-
-
+	<!------------->
 	<!-- Wrapper -->
-	<div id="wrapper">
+	<!------------->
 
-		<div id="google_translate_element"></div>
+	<div id="wrapper">
+		<div class="inner">
+
+			<!------------------------------->
+			<!-- Googel Translate Dropdown -->
+			<!------------------------------->
+
+			<div id="google_translate_element"></div>
+
+			<!---------------->
+			<!-- Mobile Nav -->
+			<!---------------->
+
+			<div class="banner">
+				<img class="logo2" src="images/Z7 icon.png" alt="" width="45%" height="45%" />
+				<div class="navigation">
+					<button class="hamburger" onclick="show()">
+						<div id="bar1" class="bar"></div>
+						<div id="bar2" class="bar"></div>
+						<div id="bar3" class="bar"></div>
+					</button>
+					<nav>
+						<div class="options">
+							<ul>
+								<li id="first"><a class="option" href="#intro">Sobre Mi</a></li>
+								<li><a class="option" href="#one">Mis Proyectos</a></li>
+								<li><a class="option" href="#two">Skills</a></li>
+								<li><a class="option" href="#three">Contacto</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+		<!---------------------->
+		<!-- Intro - About Me -->
+		<!---------------------->
 
 		<section id="intro" class="wrapper style1 fullscreen fade-up">
-
-			<!-- Mobile Nav -->
-
-			<div class="navigation">
-				<button class="hamburger" onclick="show()">
-					<div id="bar1" class="bar"></div>
-					<div id="bar2" class="bar"></div>
-					<div id="bar3" class="bar"></div>
-				</button>
-
-				<nav>
-					<div class="banner">
-						<img class="logo2" src="images/Z7 icon.png" alt="" width="45%" height="45%" />
-					</div>
-					<div class="options">
-						<ul>
-							<li id="first"><a  class="option"href="#intro">Sobre Mi</a></li>
-							<li><a class="option" href="#one">Mis Proyectos</a></li>
-							<li><a class="option" href="#two">Skills</a></li>
-							<li><a class="option" href="#three">Contacto</a></li>
-						</ul>
-					</div>
-				</nav>
-
-			</div>
-
-			<!-- Intro -->
 
 			<div class="inner">
 				<h1>Bienvenido, al Portfolio de</h1>
@@ -86,9 +99,14 @@
 			</div>
 		</section>
 
-		<!-- One -->
+		<!---------------------------->
+		<!-- Section One - Projects -->
+		<!---------------------------->
 
 		<section id="one" class="wrapper style2 spotlights">
+
+			<!-- Project #1 -->
+
 			<section>
 				<a href="#" class="image"><img src="images/pic01.png" alt="" data-position="center center" /></a>
 				<div class="content">
@@ -100,13 +118,15 @@
 							<li><i class="fas fa-desktop"></i>Version: PC</li>
 							<li><i class="far fa-calendar-alt"></i>Año: 2019</li>
 						</ul>
-						<!-- <p>Roguelike Game</p> -->
 						<ul class="actions">
 							<li><a href="md.html" class="button">Ver Mas</a></li>
 						</ul>
 					</div>
 				</div>
 			</section>
+
+			<!-- Project #2 -->
+
 			<section>
 				<a href="#" class="image"><img src="images/KDSplashArt.png" alt="" data-position="top center" /></a>
 				<div class="content">
@@ -124,6 +144,9 @@
 					</div>
 				</div>
 			</section>
+
+			<!-- Project #3 -->
+
 			<section>
 				<a href="#" class="image imgg"><img src="images/TElogo4.png" alt="" data-position="15% 15%" /></a>
 				<div class="content">
@@ -141,6 +164,9 @@
 					</div>
 				</div>
 			</section>
+
+			<!-- Project #4 -->
+
 			<section>
 				<a href="#" class="image"><img src="images/SBSplashArt2.png" alt="" data-position="15% 15%" /></a>
 				<div class="content">
@@ -160,7 +186,9 @@
 			</section>
 		</section>
 
-		<!-- Two -->
+		<!-------------------------->
+		<!-- Section One - Skills -->
+		<!-------------------------->
 
 		<section id="two" class="wrapper style3 fade-up">
 			<div class="inner">
@@ -192,21 +220,26 @@
 							de sonidos en caso de ser necesario.</p>
 					</section>
 				</div>
-				<!--
-							<ul class="actions">
-								<li><a href="generic copy.html" class="button">Learn more</a></li>
-							</ul>
-							-->
+
+				<!-- <ul class="actions">
+					<li><a href="generic copy.html" class="button">Learn more</a></li>
+				</ul> -->
+
 			</div>
 		</section>
 
-		<!-- Three -->
+		<!----------------------------->
+		<!-- Section Three - Contact -->
+		<!----------------------------->
 
 		<section id="three" class="wrapper style1 fade-up">
 			<div class="inner">
 				<h2>Contacto</h2>
 				<p>Si deseas puedes comunicarte conmigo.</p>
 				<div class="split style1">
+
+					<!-- Contact Form -->
+
 					<section>
 						<form action="https://formsubmit.co/aln71198@gmail.com" method="POST">
 							<input type="hidden" name="_captcha" value="false">
@@ -231,6 +264,9 @@
 							</ul>
 						</form>
 					</section>
+
+					<!-- Contact Info -->
+
 					<section>
 						<ul class="contact">
 							<li>
@@ -242,20 +278,19 @@
 								<!-- <a href="#">aln71198@gmail.com</a> -->
 								<span>aln71198@gmail.com</span>
 							</li>
-							<!--  
-										<li>
-											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
-										</li>
-										-->
+							<!-- <li>
+								<h3>Phone</h3>
+								<span>(000) 000-0000</span>
+							</li>										 -->
 							<li>
 								<h3><i class="fas fa-user"></i>Social</h3>
 								<ul class="icons">
 									<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> 
-												<li><a href="https://www.linkedin.com/in/agustinlopez7/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> 
+										<li><a href="https://www.linkedin.com/in/agustinlopez7/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a>
+									</li> -->
 									<a href="https://www.linkedin.com/in/agustinlopez7/" target="_blank"><span
 											style="color: #235cb3">LinkedIn</a>
 								</ul>
@@ -265,10 +300,11 @@
 				</div>
 			</div>
 		</section>
-
 	</div>
 
+	<!------------>
 	<!-- Footer -->
+	<!------------>
 
 	<footer id="footer" class="wrapper style1-alt">
 		<div class="inner">
@@ -279,7 +315,11 @@
 		</div>
 	</footer>
 
+	<!------------->
 	<!-- Scripts -->
+	<!------------->
+
+	<!-- Google Transalte -->
 
 	<script type="text/javascript">
 		function googleTranslateElementInit() {
@@ -288,6 +328,9 @@
 	</script>
 	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
 	</script>
+
+	<!-- Hamburguer Menu -->
+
 	<script>
 		function show() {
 			document.querySelector('.hamburger').classList.toggle('open')
@@ -298,6 +341,9 @@
 			document.querySelector('.option').classList.toggle('disable-nav')
 		}
 	</script>
+
+	<!-- All -->
+
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
 	<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -305,7 +351,6 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
