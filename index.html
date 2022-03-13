@@ -43,38 +43,35 @@
 
 		<div id="google_translate_element"></div>
 
-		<!-- Mobile Nav -->
-		<nav id="nav-panel" class="mobile-nav">
-			<button onclick="hide()">
-				<div><i class="fas fa-bars fa-2x"></i></div>
-			</button>
-			<img class="logo2" src="images/Z7 icon.png" alt="" width="45%" height="45%" />
-			<a id="first" href="#intro">Sobre Mi</a></li>
-			<a href="#one">Mis Proyectos</a></li>
-			<a href="#two">Skills</a></li>
-			<a href="#three">Contacto</a></li>
-		</nav>
-		<!-- <nav  id="nav" class="mobile-nav">
-			<button onclick="hide()">
-				<div><i class="fas fa-bars fa-2x"></i></div>
-			</button>
-			<img class="logo2" src="images/Z7 icon.png" alt="" width="45%" height="45%" />
-			<a id="first" href="#intro">Sobre Mi</a></li>
-			<a href="#one">Mis Proyectos</a></li>
-			<a href="#two">Skills</a></li>
-			<a href="#three">Contacto</a></li>
-		</nav> -->
-
-		<!-- Intro -->
-
-
 		<section id="intro" class="wrapper style1 fullscreen fade-up">
-			<div class="banner">
-				<img class="logo2" src="images/Z7 icon.png" alt="" width="45%" height="45%" />
-				<button onclick="show()" class="hamburger">
-					<div class="bar"><i class="fas fa-bars fa-4x"></i></div>
+
+			<!-- Mobile Nav -->
+
+			<div class="navigation">
+				<button class="hamburger" onclick="show()">
+					<div id="bar1" class="bar"></div>
+					<div id="bar2" class="bar"></div>
+					<div id="bar3" class="bar"></div>
 				</button>
+
+				<nav>
+					<div class="banner">
+						<img class="logo2" src="images/Z7 icon.png" alt="" width="45%" height="45%" />
+					</div>
+					<div class="options">
+						<ul>
+							<li id="first"><a  class="option"href="#intro">Sobre Mi</a></li>
+							<li><a class="option" href="#one">Mis Proyectos</a></li>
+							<li><a class="option" href="#two">Skills</a></li>
+							<li><a class="option" href="#three">Contacto</a></li>
+						</ul>
+					</div>
+				</nav>
+
 			</div>
+
+			<!-- Intro -->
+
 			<div class="inner">
 				<h1>Bienvenido, al Portfolio de</h1>
 				<h1>Agustin Lopez Nogueiras</h1>
@@ -292,13 +289,13 @@
 	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
 	</script>
 	<script>
-		function hide() {
-			// document.getElementById("nav").style.display = 'none';
-			document.getElementById("nav-panel").style.zIndex = '0';
-		}
 		function show() {
-			// document.getElementById("nav").style.display = 'none';
-			document.getElementById("nav-panel").style.zIndex = '98';
+			document.querySelector('.hamburger').classList.toggle('open')
+			document.querySelector('.navigation').classList.toggle('active-nav')
+		}
+
+		function disableNav() {
+			document.querySelector('.option').classList.toggle('disable-nav')
 		}
 	</script>
 	<script src="assets/js/jquery.min.js"></script>
