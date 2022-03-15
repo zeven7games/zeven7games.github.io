@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 
 <head>
@@ -58,7 +53,7 @@
 			<!---------------->
 
 			<div class="banner">
-				<img class="logo2" src="images/Z7 icon.png" alt="" width="45%" height="45%" />
+				<img src="images/Z7 icon.png" alt="" width="45%" height="45%" />
 				<div class="navigation">
 					<button class="hamburger" onclick="show()">
 						<div id="bar1" class="bar"></div>
@@ -66,12 +61,12 @@
 						<div id="bar3" class="bar"></div>
 					</button>
 					<nav>
-						<div class="options">
+						<div class="nav-options">
 							<ul>
-								<li id="first"><a class="option" href="#intro">Sobre Mi</a></li>
-								<li><a class="option" href="#one">Mis Proyectos</a></li>
-								<li><a class="option" href="#two">Skills</a></li>
-								<li><a class="option" href="#three">Contacto</a></li>
+								<li id="first"><a class="nav-item" href="#intro" onclick="disableNav()">Sobre Mi</a></li>
+								<li><a class="nav-item" href="#one" onclick="disableNav()">Mis Proyectos</a></li>
+								<li><a class="nav-item" href="#two" onclick="disableNav()">Skills</a></li>
+								<li><a class="nav-item" href="#three" onclick="disableNav()">Contacto</a></li>
 							</ul>
 						</div>
 					</nav>
@@ -104,6 +99,9 @@
 		<!---------------------------->
 
 		<section id="one" class="wrapper style2 spotlights">
+			<!-- <div class="inner tittle">
+				<h2>Mis Proyectos</h2>
+			</div> -->
 
 			<!-- Project #1 -->
 
@@ -309,7 +307,7 @@
 	<footer id="footer" class="wrapper style1-alt">
 		<div class="inner">
 			<ul class="menu">
-				<li>&copy; Agustin lopez Nogueiras. All rights reserved.</li>
+				<li>&copy; 2022 Agustin Lopez Nogueiras. All rights reserved.</li>
 				<li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a> & ZEVEN7 Games</li>
 			</ul>
 		</div>
@@ -338,7 +336,8 @@
 		}
 
 		function disableNav() {
-			document.querySelector('.option').classList.toggle('disable-nav')
+			document.querySelector('.hamburger').classList.toggle('open')
+			document.querySelector('.navigation').classList.toggle('active-nav')
 		}
 	</script>
 

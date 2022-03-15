@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html>
-    
+
 <head>
-    <title>Tower Escape</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://kit.fontawesome.com/02d110e88a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/pages.css" />
+	<title>Tower Escape</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/02d110e88a.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="assets/css/pages.css" />
 </head>
 
 <body>
-    
+
+	<!------------------------------->
+	<!-- Googel Translate Dropdown -->
+	<!------------------------------->
+
 	<div id="google_translate_element"></div>
+
+	<!----------------->
+	<!-- Game Banner -->
+	<!----------------->
+
 	<div class="navbar">
 		<a href="index.html"><i class="far fa-arrow-alt-circle-left fa-2xl"></i></a>
 		<h1 class="title" style="text-align:center">Tower Escape</h1>
 	</div>
+
+	<!---------------------->
+	<!-- Game Description -->
+	<!---------------------->
 
 	<section id="game-data">
 		<section id="game-info">
@@ -25,7 +38,8 @@
 				<div>
 					<p>Tower Escape es un juego estilo plataforma, en el que un solitario caballero trata de huir de la
 						guerra que hay en su reino, pero de momento es captado por un dragón, su única alternativa es
-						esconderse en la torre mas cercana, lo que no sabe es que la torre no es tan segura como parece.</p>
+						esconderse en la torre mas cercana, lo que no sabe es que la torre no es tan segura como parece.
+					</p>
 				</div>
 			</div>
 			<div class="caption-container4">
@@ -36,21 +50,26 @@
 			</div>
 		</section>
 
-        <div class="caption-container3">
-            <h3>Galeria</h3>
-        </div>
+		<div class="caption-container3">
+			<h3>Galeria</h3>
+		</div>
 
+		<!------------------------>
 		<!-- PC Version Gallery -->
+		<!------------------------>
 
-		<section id="pc-gallery">		
+		<section id="pc-gallery">
+
+			<!-- Main Image View -->
 
 			<div class="container">
 				<section id="max-img">
-                    <div class="main row mr-vertical">
-                        <div id="c0" class="c0 column2">
-                            <img class="expand-img" src="images/expand-arrows.png" onclick="openModal();currentSlide(1)">
-                        </div>
-                    </div>
+					<div class="main row mr-vertical">
+						<div id="c0" class="c0 column2">
+							<img class="expand-img" src="images/expand-arrows.png"
+								onclick="openModal();currentSlide(1)">
+						</div>
+					</div>
 					<div class="mySlides1">
 						<div class="numbertext">1 / 6</div>
 						<img src="images/te (1).jpeg" style="width:26%">
@@ -81,10 +100,14 @@
 						<img src="images/te (2).jpeg" style="width:26%">
 					</div>
 
+					<!-- Prev/Next Buttons -->
+
 					<a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
 					<a class="next" onclick="plusSlides1(1)">&#10095;</a>
 
 				</section>
+
+				<!-- Small Image Preview -->
 
 				<section id="min-img">
 					<div class="row">
@@ -109,7 +132,7 @@
 								onclick="currentSlide1(5)">
 						</div>
 						<div class="column2">
-							<img class="demo cursor" src="images/te (1).jpeg" style="width:26%" 
+							<img class="demo cursor" src="images/te (1).jpeg" style="width:26%"
 								onclick="currentSlide(6)">
 						</div>
 					</div>
@@ -117,76 +140,82 @@
 			</div>
 		</section>
 
+		<!---------------------------->
 		<!-- Mobile Version Gallery -->
+		<!---------------------------->
 
 		<section id="mobile-gallery">
 
-				<div id="myModal" class="modal">
-					<span class="close cursor" onclick="closeModal()">&times;</span>
-					<div class="modal-content vertical">
+			<!-- Modal - Main Image View -->
 
-						<div class="mySlides">
-							<div class="numbertext">1 / 6</div>
-							<img src="images/te (1).jpeg" style="width:80%">
-						</div>
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content vertical">
 
-						<div class="mySlides">
-							<div class="numbertext">2 / 6</div>
-							<img src="images/te (2).jpeg" style="width:80%">
-						</div>
+					<div class="mySlides">
+						<div class="numbertext">1 / 6</div>
+						<img src="images/te (1).jpeg" style="width:80%">
+					</div>
 
-						<div class="mySlides">
-							<div class="numbertext">3 / 6</div>
-							<img src="images/te (3).jpeg" style="width:80%">
-						</div>
+					<div class="mySlides">
+						<div class="numbertext">2 / 6</div>
+						<img src="images/te (2).jpeg" style="width:80%">
+					</div>
 
-						<div class="mySlides">
-							<div class="numbertext">4 / 6</div>
-							<img src="images/te (4).jpeg" style="width:80%">
-						</div>
+					<div class="mySlides">
+						<div class="numbertext">3 / 6</div>
+						<img src="images/te (3).jpeg" style="width:80%">
+					</div>
 
-						<div class="mySlides">
-							<div class="numbertext">5 / 6</div>
-							<img src="images/te (1).jpeg" style="width:80%">
-						</div>
+					<div class="mySlides">
+						<div class="numbertext">4 / 6</div>
+						<img src="images/te (4).jpeg" style="width:80%">
+					</div>
 
-						<div class="mySlides">
-							<div class="numbertext">6 / 6</div>
-							<img src="images/te (2).jpeg" style="width:80%">
-						</div>
+					<div class="mySlides">
+						<div class="numbertext">5 / 6</div>
+						<img src="images/te (1).jpeg" style="width:80%">
+					</div>
 
-						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					<div class="mySlides">
+						<div class="numbertext">6 / 6</div>
+						<img src="images/te (2).jpeg" style="width:80%">
+					</div>
+					
+					<!-- Modal - Prev/Next Buttons -->
 
-						<div class="column2">
-							<img class="demo cursor" src="images/te (1).jpeg" style="width:100%"
-								onclick="currentSlide(1)">
-						</div>
-						<div class="column2">
-							<img class="demo cursor" src="images/te (2).jpeg" style="width:100%"
-								onclick="currentSlide(2)">
-						</div>
-						<div class="column2">
-							<img class="demo cursor" src="images/te (3).jpeg" style="width:100%"
-								onclick="currentSlide(3)">
-						</div>
-						<div class="column2">
-							<img class="demo cursor" src="images/te (4).jpeg" style="width:100%"
-								onclick="currentSlide(4)">
-						</div>
-						<div class="column2">
-							<img class="demo cursor" src="images/te (1).jpeg" style="width:100%"
-								onclick="currentSlide(5)">
-						</div>
-						<div class="column2">
-							<img class="demo cursor" src="images/te (2).jpeg" style="width:100%" 
-								onclick="currentSlide(6)">
-						</div>
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					<!-- Modal - Small Image Preview -->
+
+					<div class="column2">
+						<img class="demo cursor" src="images/te (1).jpeg" style="width:100%" onclick="currentSlide(1)">
+					</div>
+					<div class="column2">
+						<img class="demo cursor" src="images/te (2).jpeg" style="width:100%" onclick="currentSlide(2)">
+					</div>
+					<div class="column2">
+						<img class="demo cursor" src="images/te (3).jpeg" style="width:100%" onclick="currentSlide(3)">
+					</div>
+					<div class="column2">
+						<img class="demo cursor" src="images/te (4).jpeg" style="width:100%" onclick="currentSlide(4)">
+					</div>
+					<div class="column2">
+						<img class="demo cursor" src="images/te (1).jpeg" style="width:100%" onclick="currentSlide(5)">
+					</div>
+					<div class="column2">
+						<img class="demo cursor" src="images/te (2).jpeg" style="width:100%" onclick="currentSlide(6)">
 					</div>
 				</div>
+			</div>
 		</section>
 
 	</section>
+
+	<!------------->
+	<!-- Scripts -->
+	<!------------->
 
 	<!-- Google Translate Scripts -->
 
